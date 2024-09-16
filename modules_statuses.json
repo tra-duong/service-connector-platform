@@ -1,5 +1,8 @@
 {
     "User": true,
     "Common": true,
-    "Category": true
+    "Category": true,
+    "SocialAuth": true,
+    "JobRequest": true,
+    "Team": true
 }

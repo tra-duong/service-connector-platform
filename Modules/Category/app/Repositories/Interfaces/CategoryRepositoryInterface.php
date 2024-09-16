@@ -9,5 +9,5 @@ interface CategoryRepositoryInterface
     /**
      * Get list of categories.
      */
-    public function getList(): LengthAwarePaginator;
+    public function getList(): ?LengthAwarePaginator;
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Modules\Common\App\Utils;
+namespace Modules\Common\Utils;
 class CommonConstants
 {
   const DEFAULT_PAGING = 10;

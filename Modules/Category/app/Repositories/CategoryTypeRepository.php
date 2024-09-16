@@ -10,7 +10,7 @@ use Modules\Common\Helpers\StringHelper;
 
 class CategoryTypeRepository implements CategoryTypeRepositoryInterface
 {
-    public function getList(): LengthAwarePaginator
+    public function getList(): ?LengthAwarePaginator
     {
         dd(StringHelper::buildMachineName('1212121fdf asdasd'));
         dd(CommonConstants::DEFAULT_PAGING);

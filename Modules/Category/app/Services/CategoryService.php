@@ -24,9 +24,11 @@ class CategoryService implements CategoryServiceInterface
     public function getList(Request $request): ?LengthAwarePaginator
     {
         try {
+            dd($this->categoryRepository->getList());
             return $this->categoryRepository->getList();
         } catch (Exception $e) {
             Log::error('Get list: ' . $e->getMessage());
+            return null;
         }
     }
 

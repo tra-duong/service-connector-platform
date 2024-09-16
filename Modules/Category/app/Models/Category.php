@@ -33,8 +33,16 @@ class Category extends Model
     /**
      * Parent category.
      */
+    public function getType(): BelongsTo
+    {
+        return $this->belongsTo(CategoryType::class);
+    }
+
+    /**
+     * Parent category.
+     */
     public function parent(): BelongsTo
     {
-        return $this->belongsTo(CategoryType::class, 'parent_id', 'id');
+        return $this->belongsTo(Category::class, 'parent_id', 'id');
     }
 }

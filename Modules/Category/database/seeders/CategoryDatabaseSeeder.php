@@ -3,6 +3,8 @@
 namespace Modules\Category\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\Category\Database\Seeders\CategorySeeder;
+use Modules\Category\Database\Seeders\CategoryTypeSeeder;
 
 class CategoryDatabaseSeeder extends Seeder
 {
@@ -11,6 +13,13 @@ class CategoryDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        echo PHP_EOL;
+        echo PHP_EOL;
+        echo PHP_EOL;
+        $this->command->info('==================================== Calling Category seeder ====================================');
+        $this->call([
+            CategoryTypeSeeder::class,
+            CategorySeeder::class,
+        ]);
     }
 }

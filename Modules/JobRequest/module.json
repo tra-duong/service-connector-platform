@@ -1,0 +1,11 @@
+{
+    "name": "JobRequest",
+    "alias": "jobrequest",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JobRequest\\Providers\\JobRequestServiceProvider"
+    ],
+    "files": []
+}

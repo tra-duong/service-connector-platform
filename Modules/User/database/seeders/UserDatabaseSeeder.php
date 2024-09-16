@@ -11,6 +11,14 @@ class UserDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        echo PHP_EOL;
+        echo PHP_EOL;
+        echo PHP_EOL;
+        $this->command->info('==================================== Calling User & Role seeder ====================================');
+        $this->call([
+            RoleSeeder::class,
+            UserSeeder::class,
+        ]);
+
     }
 }

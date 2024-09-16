@@ -6,5 +6,5 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 interface CategoryTypeRepositoryInterface
 {
-    public function getList(): LengthAwarePaginator;
+    public function getList(): ?LengthAwarePaginator;
 }

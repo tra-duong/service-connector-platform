@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->string('name')->nullable(false);
             $table->string('machine_name')->nullable(false);
             $table->string('status')->default(CategoryStatusHelper::STATUS_INACTIVE);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

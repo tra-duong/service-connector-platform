@@ -2,10 +2,11 @@
 
 namespace Modules\User\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
+use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UserFactory extends Factory
 {
@@ -31,7 +32,12 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
-            'remember_token' => Str::random(10),
+            'first_name' => Str::random(10),
+            'middle_name' => Str::random(10),
+            'last_name' => Str::random(10),
+            'birthday' => Carbon::now()->subYears(18),
+            'google_id' => Str::random(10),
+            'avatar' => Str::random(10),
         ];
     }
 
@@ -40,7 +46,7 @@ class UserFactory extends Factory
      */
     public function unverified(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn(array $attributes) => [
             'email_verified_at' => null,
         ]);
     }
