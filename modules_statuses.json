@@ -4,5 +4,7 @@
     "Category": true,
     "SocialAuth": true,
     "JobRequest": true,
-    "Team": true
+    "Team": true,
+    "Province": true,
+    "NLPHandling": true
 }

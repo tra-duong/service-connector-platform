@@ -8,25 +8,25 @@ use Tests\TestCase;
 
 class GoogleLoginFeatureTest extends TestCase
 {
-  // use RefreshDatabase;
+    // use RefreshDatabase;
 
-  protected function setUp(): void
-  {
-    parent::setUp();
-    // Create category types.
-    for ($i = 0; $i < 10; $i++) {
-      $cat = CategoryType::factory()->create();
+    protected function setUp(): void
+    {
+        parent::setUp();
+        // Create category types.
+        for ($i = 0; $i < 10; $i++) {
+            $cat = CategoryType::factory()->create();
+        }
     }
-  }
 
-  public function testCallAuth()
-  {
+    public function testCallAuth()
+    {
 
-    $this->setUp();
-    $url = route('api.social.login.google');
-    // Call get all categories.
-    $response = $this->get($url);
-    dd($response);
-    dd($response->json());
-  }
+        $this->setUp();
+        $url = route('api.social.login.google');
+        // Call get all categories.
+        $response = $this->get($url);
+        dd($response);
+        dd($response->json());
+    }
 }

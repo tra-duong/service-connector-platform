@@ -3,8 +3,6 @@
 namespace Modules\Category\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Modules\Category\Models\Category;
 use Modules\Category\Models\CategoryType;
 
 class CategoryTypeSeeder extends Seeder

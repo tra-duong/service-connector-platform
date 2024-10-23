@@ -2,8 +2,8 @@
 
 namespace Modules\Team\Database\Factories;
 
-use Modules\Team\Models\Team;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\Team\Models\Team;
 
 class TeamFactory extends Factory
 {
@@ -24,4 +24,3 @@ class TeamFactory extends Factory
         ];
     }
 }
-

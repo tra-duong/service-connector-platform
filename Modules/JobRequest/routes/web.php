@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use Modules\JobRequest\Http\Controllers\JobRequestController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes

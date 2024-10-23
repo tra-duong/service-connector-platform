@@ -1,6 +1,5 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
 use Modules\SocialAuth\Http\Controllers\SocialAuthController;
 use Modules\SocialAuth\Http\Middleware\CheckProvider;
@@ -35,4 +34,3 @@ Route::get('login/{provider}/callback', [SocialAuthController::class, 'callback'
 //         return redirect(config('app.fe_url') . '/login');  // Redirect hoặc xử lý lỗi
 //     }
 // });
-

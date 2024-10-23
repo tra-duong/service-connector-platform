@@ -25,9 +25,11 @@ class CategoryService implements CategoryServiceInterface
     {
         try {
             dd($this->categoryRepository->getList());
+
             return $this->categoryRepository->getList();
         } catch (Exception $e) {
-            Log::error('Get list: ' . $e->getMessage());
+            Log::error('Get list: '.$e->getMessage());
+
             return null;
         }
     }

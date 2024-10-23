@@ -3,9 +3,9 @@
 namespace Modules\Category\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\Common\Helpers\StringHelper;
 use Modules\Category\Helpers\CategoryStatusHelper;
 use Modules\Category\Models\CategoryType;
+use Modules\Common\Helpers\StringHelper;
 
 class CategoryTypeFactory extends Factory
 {

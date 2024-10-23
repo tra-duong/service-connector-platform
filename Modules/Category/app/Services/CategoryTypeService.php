@@ -26,7 +26,8 @@ class CategoryTypeService implements CategoryTypeServiceInterface
         try {
             return $this->categoryTypeRepository->getList();
         } catch (Exception $e) {
-            Log::error('Get list: ' . $e->getMessage());
+            Log::error('Get list: '.$e->getMessage());
+
             return null;
         }
     }

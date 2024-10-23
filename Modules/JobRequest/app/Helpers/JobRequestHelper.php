@@ -6,6 +6,7 @@ class JobRequestHelper
 {
     // Draft.
     const STATUS_DRAFT = 1;
+
     // Waiting for deals.
     const STATUS_PUBLISH = 2;
 
@@ -13,18 +14,25 @@ class JobRequestHelper
     const STATUS_DEAL_SELECTED = 3;
 
     const STATUS_PENDING = 4;
+
     const STATUS_PROCESSING = 5;
+
     const STATUS_COMPLETED = 6;
+
     const STATUS_CANCEL = 7;
+
     const TYPE_INDIVIDUAL = 1;
+
     const TYPE_TEAM = 2;
+
     const TYPE_COMPANY = 3;
 
     /**
      * JobRequest Status
+     *
      * @return string[]
      */
-    public function allJobRequestStatus()
+    public static function allJobRequestStatus()
     {
         return [
             self::STATUS_DRAFT => 'Nháp',
@@ -39,6 +47,7 @@ class JobRequestHelper
 
     /**
      * Get JobRequest Types
+     *
      * @return string[]
      */
     public static function getJobRequestType()

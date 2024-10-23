@@ -19,4 +19,3 @@ class JobRequestFactory extends Factory
         return [];
     }
 }
-

@@ -5,12 +5,12 @@ namespace Modules\JobRequest\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Modules\JobRequest\Services\Interfaces\JobRequestServiceListingInterface;
 
 class JobRequestListingController extends Controller
 {
     protected JobRequestServiceListingInterface $listingService;
+
     public function __construct(JobRequestServiceListingInterface $listingService)
     {
         $this->listingService = $listingService;

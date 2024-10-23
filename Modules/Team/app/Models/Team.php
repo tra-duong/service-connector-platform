@@ -2,14 +2,14 @@
 
 namespace Modules\Team\Models;
 
-use Modules\User\Models\User;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Team\Database\Factories\TeamFactory;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Modules\Team\Database\Factories\TeamFactory;
+use Modules\User\Models\User;
 
 class Team extends Model
 {
@@ -31,7 +31,6 @@ class Team extends Model
 
     /**
      * Team members.
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function members(): BelongsToMany
     {
@@ -40,7 +39,6 @@ class Team extends Model
 
     /**
      * Team leader.
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
     public function leader(): HasOne
     {
@@ -49,7 +47,6 @@ class Team extends Model
 
     /**
      * Get sub teams.
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function subTeams(): HasMany
     {

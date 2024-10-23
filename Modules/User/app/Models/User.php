@@ -3,14 +3,13 @@
 namespace Modules\User\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Modules\User\Models\Team;
-use Laravel\Passport\HasApiTokens;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\User\Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
+use Modules\User\Database\Factories\UserFactory;
 
 class User extends Authenticatable
 {
@@ -65,9 +64,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
     /**
      * Get user's teams.
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function teams(): BelongsToMany
     {

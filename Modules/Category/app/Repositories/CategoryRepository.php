@@ -11,6 +11,7 @@ class CategoryRepository implements CategoryRepositoryInterface
     public function getList(): ?LengthAwarePaginator
     {
         dd(Category::paginate());
+
         return Category::paginate();
     }
 }

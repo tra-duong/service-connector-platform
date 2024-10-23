@@ -2,13 +2,12 @@
 
 namespace Modules\Category\Tests\Unit;
 
-use Tests\TestCase;
-use Illuminate\Support\Str;
 use Illuminate\Database\QueryException;
-use Modules\Common\Helpers\StringHelper;
-use Modules\Category\Models\CategoryType;
-use Modules\Category\Tests\Unit\CategoryUnitTest;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Str;
+use Modules\Category\Models\CategoryType;
+use Modules\Common\Helpers\StringHelper;
+use Tests\TestCase;
 
 class CategoryTypeUnitTest extends TestCase
 {

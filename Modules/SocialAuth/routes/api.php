@@ -1,10 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use Laravel\Socialite\Facades\Socialite;
-use Modules\SocialAuth\App\Services\GoogleAuthService;
-use Modules\SocialAuth\Http\Controllers\SocialAuthController;
-
 /*
  *--------------------------------------------------------------------------
  * API Routes

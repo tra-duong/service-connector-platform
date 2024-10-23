@@ -25,7 +25,7 @@ class UpdateCategoryTypeRequest extends FormRequest
                 'regex:/^[a-z0-9_]+$/',
                 function ($attribute, $value, $fail) use ($categoryType) {
                     if ($value !== $categoryType->getOriginal('machine_name')) {
-                        $fail('The ' . $attribute . ' cannot be changed once it is set.');
+                        $fail('The '.$attribute.' cannot be changed once it is set.');
                     }
                 },
             ],

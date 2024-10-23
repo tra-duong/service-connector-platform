@@ -2,8 +2,8 @@
 
 namespace Modules\SocialAuth\Database\Factories;
 
-use Modules\SocialAuth\Models\SocialProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\SocialAuth\Models\SocialProvider;
 
 class SocialProviderFactory extends Factory
 {
@@ -20,4 +20,3 @@ class SocialProviderFactory extends Factory
         return [];
     }
 }
-

@@ -1,0 +1,11 @@
+{
+    "name": "NLPHandling",
+    "alias": "nlphandling",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\NLPHandling\\Providers\\NLPHandlingServiceProvider"
+    ],
+    "files": []
+}

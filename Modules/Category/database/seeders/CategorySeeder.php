@@ -4,8 +4,8 @@ namespace Modules\Category\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Modules\Category\Models\Category;
-use Modules\Common\Helpers\StringHelper;
 use Modules\Category\Models\CategoryType;
+use Modules\Common\Helpers\StringHelper;
 
 class CategorySeeder extends Seeder
 {
